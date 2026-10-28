@@ -179,7 +179,10 @@ export default function Gallery() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
                   key={image.id}
-                  className={cn("relative group rounded-xl overflow-hidden cursor-pointer", image.span)}
+                  className={cn(
+                    "relative group rounded-xl overflow-hidden cursor-pointer",
+                    (image.span || '').replace(/\bcol-span-(\d+)/g, 'md:col-span-$1').replace(/\brow-span-(\d+)/g, 'md:row-span-$1')
+                  )}
                   onClick={() => openLightbox(idx)}
                 >
                   <img 

@@ -171,7 +171,7 @@ export default function Fleet() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Businesses Choose Us</h2>
-            <p className="text-dark/70">We provide the reliability, transparency, and priority support corporate clients demand.</p>
+            <p className="text-white/80">We provide the reliability, transparency, and priority support corporate clients demand.</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10">
@@ -179,7 +179,7 @@ export default function Fleet() {
               const Icon = item.icon;
               return (
                 <div key={idx} className="flex flex-col items-center text-center p-6 bg-white/5 border border-white/10 rounded-[1px] backdrop-blur-sm">
-                  <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-4 text-primary">
+                  <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-4 text-accent">
                     <Icon className="w-8 h-8" />
                   </div>
                   <h3 className="font-bold text-lg text-white">{item.title}</h3>
@@ -222,7 +222,7 @@ export default function Fleet() {
           
           <div className="relative">
             <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-white -translate-y-1/2" />
-            <div className="grid lg:grid-cols-5 gap-8 lg:gap-4 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4 relative z-10">
               {STEPS.map((step, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-[1px] border border-dark/10 shadow-xl shadow-charcoal/5 relative">
                   <div className="w-12 h-12 bg-accent text-white font-bold rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-charcoal/20">

@@ -123,10 +123,10 @@ export default function Contact() {
 
       {/* 2. Contact Options Grid */}
       <section className="py-12 -mt-16 relative z-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
             <Breadcrumbs items={[{ label: 'Contact Us' }]} variant="light" />
           </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {contactOptions.map((option, idx) => {
               const Icon = option.icon;

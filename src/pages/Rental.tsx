@@ -132,9 +132,6 @@ export default function Rental() {
         </div>
       </section>
 
-      {/* Spacer for overlapping widget */}
-      <div className="h-24 md:h-32 bg-white"></div>
-
       {/* 2. Rental Categories */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -143,7 +140,7 @@ export default function Rental() {
             <p className="text-dark/70 text-lg">Find the perfect car size and style for your needs.</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {RENTAL_CATEGORIES.map((category, idx) => (
               <motion.div
                 key={category.id}
@@ -217,7 +214,7 @@ export default function Rental() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             <AnimatePresence mode="popLayout">
               {filteredCars.map((car) => (
                 <motion.div

@@ -155,7 +155,7 @@ export default function Services() {
           <div className="mb-6">
             <Breadcrumbs items={[{ label: 'Our Services' }]} variant="light" />
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {CORE_SERVICES.map((service, idx) => {
               const servicePath = service.title === 'Emergency Towing' ? '/towing' 
                 : service.title === 'Haulage & Heavy Transport' ? '/haulage'

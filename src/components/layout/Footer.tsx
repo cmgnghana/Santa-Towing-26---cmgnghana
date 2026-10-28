@@ -74,7 +74,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white/70 pt-16 sm:pt-20 pb-10 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-8 mb-14">
           
           {/* Brand */}
           <div className="space-y-6">
@@ -209,7 +209,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter & Socials */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <h4 className="text-white text-base sm:text-lg font-bold mb-5 relative inline-block">
               {stayConnectedTitle}
               <span className="absolute -bottom-1.5 left-0 w-8 h-0.5 bg-accent rounded-full" />

@@ -211,8 +211,8 @@ export function QuickActions() {
   const customActions = useContent('home.quickActions.items', QUICK_ACTIONS);
 
   return (
-    <div className="relative -mt-16 sm:-mt-20 z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-24">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+    <div className="relative -mt-14 sm:-mt-20 z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-5">
         {customActions.map((action: any, idx: number) => {
           const defaultItem = QUICK_ACTIONS.find(q => q.id === action.id) || QUICK_ACTIONS[idx % QUICK_ACTIONS.length];
           const Icon = defaultItem?.icon || ArrowRight;

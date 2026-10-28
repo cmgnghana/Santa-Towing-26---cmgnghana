@@ -38,7 +38,7 @@ export function AboutSection() {
               />
             </div>
             {/* Floating 24/7 Emergency Assistance Badge */}
-            <div className="absolute bottom-4 right-4 sm:-bottom-8 sm:-right-8 bg-primary text-white p-6 sm:p-7 rounded-[1px] shadow-2xl max-w-xs border border-white/10">
+            <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 md:-bottom-6 md:-right-6 lg:-bottom-8 lg:-right-8 bg-primary text-white p-4 sm:p-6 max-w-[280px] sm:max-w-xs rounded-[1px] shadow-2xl border border-white/10">
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-3 aspect-square rounded-full bg-accent flex items-center justify-center font-extrabold text-white text-lg shrink-0">
                   24/7
@@ -138,7 +138,7 @@ export function ServicesSection() {
         </div>
 
         {/* 3-Column Service Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {SERVICES.map((service, idx) => {
             const linkHref = service.title === 'Emergency Towing' ? '/towing' 
               : service.title === 'Car Recovery' ? '/towing'

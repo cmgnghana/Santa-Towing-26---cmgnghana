@@ -135,7 +135,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-20">
         
         {/* 3. Featured Post (Only show if no search/filter) */}
         {activeCategory === 'All' && !searchQuery && (
@@ -154,7 +154,7 @@ export default function Blog() {
                     </span>
                   </div>
                 </div>
-                <div className="md:w-1/2 p-6 sm:p-8 lg:p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+                <div className="md:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
                   <div className="flex items-center gap-4 text-xs font-bold text-dark/60 mb-4 uppercase tracking-wider">
                     <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> {FEATURED_POST.date}</span>
                     <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {FEATURED_POST.readTime}</span>

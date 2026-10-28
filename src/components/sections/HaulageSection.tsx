@@ -156,7 +156,7 @@ export function HaulageHomeSection() {
         </div>
 
         {/* Bottom Feature Badges */}
-        <div className="mt-12 pt-8 border-t border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 text-slate-400 text-xs sm:text-sm">
+        <div className="mt-12 pt-8 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-slate-400 text-xs sm:text-sm">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-accent shrink-0" />
             <span>Comprehensive Goods-in-Transit Cover</span>

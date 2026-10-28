@@ -13,7 +13,7 @@ export default function TopBar() {
   const linkedin = useContent('global.social.linkedin', 'https://linkedin.com/company/santatowing');
 
   return (
-    <div className="bg-secondary text-white/80 py-2.5 px-4 sm:px-6 lg:px-8 text-xs md:text-sm border-b border-white/10">
+    <div className="bg-secondary text-white/80 py-2.5 text-xs md:text-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6 font-medium">
           <a href={phoneTel} className="flex items-center gap-2 text-white hover:text-accent transition-colors font-semibold">
